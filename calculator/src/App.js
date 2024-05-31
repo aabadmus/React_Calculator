@@ -3,7 +3,9 @@ import './App.css';
 
 
 const Calculator = () => {
- 
+  //application of useState hook, where result is the initial state and setResult is the function that updates the result
+  const [result, setResult] = useState('');
+  const [scientificOperation, setScientificOperation] = useState('');
 
   //this function handles the handlebuttonclick button by use of effect
   const handleButtonClick = (e) => {
