@@ -34,8 +34,63 @@ const Calculator = () => {
           </form>
           {/*the buffer ends here */}
           <div className="gridContainer">
-           
-           
+            <button className="bg-cyan-300 text-black font-semibold" onClick={clearResult} id="clearButton">
+              Clear
+            </button>
+            <button className="" onClick={() => trig('sin')} id="scientificOperationButton">
+              sin
+            </button>
+            <button className="" onClick={() => trig('cos')} id="scientificOperationButton">
+              cos
+            </button>
+            <button className="" name="^" onClick={handleButtonClick} id="operatorButton">
+              ^
+            </button>
+            <button className="" onClick={() => trig('tan')} id="scientificOperationButton">
+              tan
+            </button>
+            <button className="" onClick={() => trig('sinh')} id="scientificOperationButton">
+              sinh
+            </button>
+            <button className="" onClick={() => trig('cosh')} id="scientificOperationButton">
+              cosh
+            </button>
+            <button className="" name="%" onClick={handleButtonClick} id="operatorButton">
+              %
+            </button>
+            <button className="" onClick={() => trig('tanh')} id="scientificOperationButton">
+              tanh
+            </button>
+            <button className="" name="sqrt" onClick={handleButtonClick} id="scientificOperationButton">
+              &radic;
+            </button>
+            <button className="" onClick={() => trig('log')} id="scientificOperationButton">
+              log
+            </button>
+            <button className="" onClick={() => trig('1/')} id="operatorButton">
+              1/x
+            </button>
+            <button className="" onClick={() => trig('ln')} id="scientificOperationButton">
+              ln
+            </button>
+            <button className="" onClick={() => trig('10^')} id="scientificOperationButton">
+              10^x
+            </button>
+            <button className="" onClick={() => trig('|')} id="scientificOperationButton">
+              |x|
+            </button>
+            <button className="" onClick={() => trig('!')} id="operatorButton">
+              !
+            </button>
+            <button className="" onClick={() => trig('pi')} id="scientificOperationButton">
+              π
+            </button>
+            <button className="" onClick={() => trig('e')} id="scientificOperationButton">
+              e
+            </button>
+            <button className="" onClick={() => trig('sinh')} id="scientificOperationButton">
+              asinh
+            </button>
             <button className="" onClick={() => trig('sqrt')} id="operatorButton">
               &sup3;√
             </button>
