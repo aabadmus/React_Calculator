@@ -16,7 +16,21 @@ const Calculator = () => {
 
 
 
+      const calculatedResult = eval(sanitizedInput);
 
+      // Check if the result is a valid number
+      if (!isNaN(calculatedResult) && isFinite(calculatedResult)) {
+        setResult(calculatedResult.toString());
+      } else {
+        setResult('Error');
+      }
+
+      setScientificOperation('');
+    } catch (err) {
+      setResult('Error');
+      setScientificOperation('');
+    }
+  };
 
 
 
