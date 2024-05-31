@@ -37,7 +37,12 @@ const Calculator = () => {
            
            
             
-            
+            <button className="" onClick={removeLastCharacter} id="backspaceButton">
+              C
+            </button>
+            <button className="" name="/" onClick={handleButtonClick} id="operatorButton">
+              &divide;
+            </button>
             <button name="7" onClick={handleButtonClick} id="numberButton">
               7
             </button>
