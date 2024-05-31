@@ -36,7 +36,15 @@ const Calculator = () => {
           <div className="gridContainer">
            
            
-            
+            <button className="" onClick={() => trig('sqrt')} id="operatorButton">
+              &sup3;√
+            </button>
+            <button className="" onClick={() => trig('cosh')} id="scientificOperationButton">
+              acosh
+            </button>
+            <button className="" onClick={() => trig('tanh')} id="scientificOperationButton">
+              atanh
+            </button>
             <button className="" onClick={removeLastCharacter} id="backspaceButton">
               C
             </button>
