@@ -5,7 +5,10 @@ import './App.css';
 const Calculator = () => {
  
 
-
+  //this function handles the handlebuttonclick button by use of effect
+  const handleButtonClick = (e) => {
+    setResult(result.concat(e.target.name));
+  };
 
   const clearResult = () => {
     setResult('');
