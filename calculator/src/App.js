@@ -12,7 +12,9 @@ const Calculator = () => {
 
  
 
- 
+  const addBracket = (bracket) => {
+    setResult(result.concat(bracket));
+  };
 
   const performCalculation = () => {
     try {
