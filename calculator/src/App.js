@@ -10,7 +10,10 @@ const Calculator = () => {
  
 
 
- 
+  const trig = (func) => {
+    setResult(`${func}(`);
+    setScientificOperation(func);
+  };
 
   const addBracket = (bracket) => {
     setResult(result.concat(bracket));
