@@ -7,7 +7,10 @@ const Calculator = () => {
 
 
 
- 
+  const clearResult = () => {
+    setResult('');
+    setScientificOperation('');
+  };
 
   const removeLastCharacter = () => {
     setResult(result.slice(0, -1));
