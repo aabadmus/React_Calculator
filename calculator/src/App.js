@@ -9,6 +9,9 @@ const Calculator = () => {
 
  
 
+  const removeLastCharacter = () => {
+    setResult(result.slice(0, -1));
+  };
 
   const trig = (func) => {
     setResult(`${func}(`);
