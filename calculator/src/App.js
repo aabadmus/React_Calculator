@@ -14,7 +14,19 @@ const Calculator = () => {
 
  
 
+  const performCalculation = () => {
+    try {
+      let sanitizedInput = result.replace(/[^-()\d/*+.sqrt^%!|ln10πehsaotc]/g, '');
 
+      // Replace trigonometric functions with their JavaScript equivalents
+      sanitizedInput = sanitizedInput.replace(/sin/g, 'Math.sin');
+      sanitizedInput = sanitizedInput.replace(/cos/g, 'Math.cos');
+      sanitizedInput = sanitizedInput.replace(/tan/g, 'Math.tan');
+      sanitizedInput = sanitizedInput.replace(/sqrt/g, 'Math.sqrt');
+      sanitizedInput = sanitizedInput.replace(/log/g, 'Math.log10');
+      sanitizedInput = sanitizedInput.replace(/ln/g, 'Math.log');
+      sanitizedInput = sanitizedInput.replace(/pi/g, 'Math.PI');
+      sanitizedInput = sanitizedInput.replace(/e/g, 'Math.E');
 
       const calculatedResult = eval(sanitizedInput);
 
